@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faheems Bookstore</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img id="logo" src="images/logo.png" alt="logo" class="slide-in">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <h1 class="slide-in">Faheem's BookStore</h1>
+        <div class="nav-items" >
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hehe.html">Hehe</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Choose your favourite books (at least four), each book must contain two columns, Column 1) face image, Column 2) a short introduction and a ‘Pay’ button -->
+    <h1 id="title">Choose a book to pay!</h1>
+    <div class="main">
+        <div class="book fade-in">
+            <div class="column">
+                <img src="images/book1.jpg" alt="book1" width="300px">
+            </div>
+            <div class="column">
+                <h3>13 hours</h3>
+                <p>Your home was the one place you felt safe.
+                    Now it’s your prison.
+                    You were invisible.
+                    Now your every move is monitored by masked strangers.
+                    You looked after your mum, your best friend.
+                    Now you barely know her.
+                    Everything can change in thirteen hours.</p>
+                <button class="pay">Details</button>
+            </div>
+        </div>
+        <div class="book fade-in">
+            <div class="column">
+                <img src="images/book2.jpg" alt="book2" width="300px">
+            </div>
+            <div class="column">
+                <h3>Harry Potter and the Order of the Phoenix</h3>
+                <p>Harry Potter and the Order of the Phoenix is a book about a boy wizard who returns to Hogwarts School of Witchcraft and Wizardry for his fifth year, where he must confront the return of the evil Lord Voldemort and a new teacher who seems determined to undermine him.</p>
+                <button class="pay">Details</button>
+            </div>
+        </div>
+        <div class="book fade-in">
+            <div class="column">
+                <img src="images/book3.jpg" alt="book3" width=300px>
+            </div>
+            <div class="column">
+                <h3>Diary of a Wimpy Kid Old School</h3>
+                <p>"Diary of a Wimpy Kid: Old School" is a book about a middle schooler named Greg Heffley who is forced to go "off the grid" for a week as part of a school assignment. During this time, he learns how to live without modern technology and discovers some surprising things about his family's history.</p>
+                <button class="pay">Details</button>
+            </div>
+        </div>
+        <div class="book fade-in">
+            <div class="column">
+                <img src="images/book4.jpg" alt="book4" width="300px">
+            </div>
+            <div class="column">
+                <h3>Wreck this Journal</h3>
+                <p>"Wreck This Journal" is an interactive book that encourages its readers to engage in creative destruction. Each page contains a different prompt or instruction, such as "rip this page out" or "spill a drink here," and encourages the reader to experiment and think outside the box.</p>
+                <button class="pay">Details</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HTML for the modal -->
+    <div id="book-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="book-title"></h2>
+            <img id="book-image" width=200px>
+            <p id="book-description"></p>
+            <button id="pay-button">Pay Now</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
